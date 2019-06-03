@@ -10,6 +10,6 @@ class PigLatinizer
         word[0, word_scan_2.size] = ''
         word + word_scan_2 + "ay"
       end
-    end.join ' 's
+    end.join ' '
   end
 end

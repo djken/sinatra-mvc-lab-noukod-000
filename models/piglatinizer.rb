@@ -6,9 +6,9 @@ class PigLatinizer
       if word.downcase.scan(/^[aeoui]+/).empty? == false
         word + "way"
       else
-        word_convert = word.scan(/^[^aeoui]+/).join ''
-        word[0, word_convert.size] = ''
-        word + word_convert + "ay"
+        word_co = word.scan(/^[^aeoui]+/).join ''
+        word[0, word_co.size] = ''
+        word + word_co + "ay"
       end
     end.join ' '
   end
